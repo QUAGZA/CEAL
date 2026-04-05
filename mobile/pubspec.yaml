@@ -1,0 +1,95 @@
+name: aftermath
+description: "CEAL — Civic Emergency Access Layer. Offline-first BLE emergency alert mesh network for civic safety."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # BLE
+  flutter_blue_plus: ^1.32.0
+  flutter_ble_peripheral: ^2.1.0
+
+  # Permissions
+  permission_handler: ^11.3.1
+
+  # Location
+  geolocator: ^13.0.2
+
+  # Local storage
+  sqflite: ^2.4.1
+  path: ^1.9.1
+
+  # Networking
+  http: ^1.2.2
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Routing
+  go_router: ^14.8.1
+
+  # Utilities
+  uuid: ^4.5.1
+  crypto: ^3.0.6
+  intl: ^0.19.0
+  xml: ^6.5.0
+
+  # Notifications
+  flutter_local_notifications: ^18.0.1
+
+  # Background tasks
+  flutter_foreground_task: ^8.13.3
+
+  # QR scanner
+  mobile_scanner: ^6.0.2
+  image_picker: ^1.1.2
+
+  # Environment variables (.env file)
+  flutter_dotenv: ^5.2.1
+
+  # Secure persistent storage for device UUID
+  flutter_secure_storage: ^9.2.2
+
+  # Connectivity monitoring for offline-first queue drain
+  connectivity_plus: ^6.1.4
+
+  # URL launching (phone dialer, maps)
+  url_launcher: ^6.3.1
+  google_fonts: ^8.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  mocktail: ^1.0.4
+  flutter_launcher_icons: ^0.14.2
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/logo.png"
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: "assets/logo.png"
+  windows:
+    generate: true
+    image_path: "assets/logo.png"
+  macos:
+    generate: true
+    image_path: "assets/logo.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/
